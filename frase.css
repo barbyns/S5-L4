@@ -1,0 +1,36 @@
+body {
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+.contenitore {
+    border: 2px solid #666;
+    padding: 20px;
+    background: white;
+    text-align: left;
+    max-width: 600px;
+    font-size: 20px;
+}
+.parole {
+    display: inline-block;
+    position: relative;
+    height: 1.2em;
+    overflow: hidden;
+    font-weight: bold;
+    color: #6c8496;
+}
+.parole i {
+    position: absolute;
+    width: 100%;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+.parole i.attiva {
+    opacity: 1;
+    transform: translateY(0);
+}
